@@ -1,0 +1,4 @@
+org/gcube/elasticsearch/FullTextNode$Builder.class
+org/gcube/elasticsearch/filters/Stopwords.class
+org/gcube/elasticsearch/NodeExecutor.class
+org/gcube/elasticsearch/FullTextNode.class
