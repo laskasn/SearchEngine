@@ -1,6 +1,9 @@
 # SearchEngine
 
+<!--
 ![Under Construction](https://cdn.pixabay.com/photo/2017/06/20/08/12/maintenance-2422173_960_720.png)
+-->
+
 
 A generic-purpose, indexing mechanism, based on ElasticSearch v2.4.2.
 This project was originally developed for the [BlueBridge H2020 EU Project](http://www.bluebridge-vres.eu/), and is now forked here, having no other dependencies on the project.
