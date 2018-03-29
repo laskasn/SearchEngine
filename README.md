@@ -22,7 +22,22 @@ Contains shared interfaces and classes between the index-service and the index-s
 
 The main webapp, intended to store and retrieve data from the elasticsearch embedded node. Each webapp comes with an elasticsearch node.
 
-The rest api allows to store
+
+
+The rest api allows to
+* insert records in the index (the schema is inferred by the data of the FIRST record inserted into it).
+* delete records from the index
+* create/drop indexes
+* list "Collections"
+* define "CollectionInfo" structures for each "Collection"
+* perform a soft reindexing of the collections, taking into consideration the accompanying CollectionInfo structure
+
+**Collection**: semantically is the dataset which resides within an index.
+**CollectionInfo**: A structure which holds a soft definition of the indexed document. There is a 1-1 relation between the index and the CollectionInfo. 
+It contains, among others: 
+* collection field aliases (if set, the index will baptise the output fields by the alias names), 
+* the option to define in CollectionInfo.collectionFieldsConfigs.FieldConfig.FacetType, the desired faceting type for the field {None, Normal, Non_Tokenized} which upon a reindexing, changes the response of the index when queried (i.e. returns field facets if asked to).
+
 
 ### index-service-cluster-manager
 
