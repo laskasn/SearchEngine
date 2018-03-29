@@ -51,6 +51,9 @@ This is a very simple client library which stores and queries on demand the exis
 A client library to access the functionality provided by the index-service endpoints. 
 
 
+> **Note:** Two are the end-user components. The index-service and the index-service-client-library. All others are dependencies of those two.
+
+
 ## ToDo:
 
 * Migrate index-service to spring boot (currently it uses jersey for the http api)
