@@ -9,9 +9,9 @@ A generic-purpose, indexing mechanism, based on ElasticSearch v2.4.2.
 This project was originally developed for the [BlueBridge H2020 EU Project](http://www.bluebridge-vres.eu/), and is now forked here, having no other dependencies on the project.
 You can also find the originating code [here](http://svn.research-infrastructures.eu/public/d4science/gcube/branches/index-management/).
 
-One major differentiation of this fork is that it does not rely on a custom endpoint discovery solution, but on the well-established [Apache Zookeeper](https://zookeeper.apache.org/) to do so.
+One major differentiation of this fork is that it does not rely on a custom endpoint discovery solution, but switched to the well-established [Apache Zookeeper](https://zookeeper.apache.org/) to do so.
 
-It consists of 5 components, which are described shortly below:
+The framework consists of 5 components, which are described shortly below:
 
 ### elasticsearch-gcube
 
